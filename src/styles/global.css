@@ -1,0 +1,59 @@
+/* General App Styling */
+.App {
+      transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Day Mode */
+.day-mode {
+      background-color: #f5f5f5;
+      color: #333;
+}
+
+/* Night Mode */
+.night-mode {
+      background-color: black;
+      color: white;
+}
+
+/* Header Styling */
+.header {
+      background-color: #fff;
+      color: #333;
+      transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.night-mode .header {
+      background-color: black;
+      color: white;
+}
+
+.night-mode .header-icon-button {
+      color: #fff;
+}
+
+/* Sidebar Styling */
+.sidebar {
+      background-color: #eef7ed;
+      transition: background-color 0.3s ease;
+}
+
+.night-mode .sidebar {
+      background-color: #333;
+      /* Dark background for sidebar */
+      color: white;
+      /* Light text on sidebar */
+}
+
+/* Content Area Styling */
+.content {
+      padding: 20px;
+      flex-grow: 1;
+      transition: color 0.3s ease;
+}
+
+.night-mode .content {
+      color: white;
+      /* Light text for content */
+      background-color: black;
+      /* Dark background for content */
+}

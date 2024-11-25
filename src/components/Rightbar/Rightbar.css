@@ -1,0 +1,113 @@
+.rightbar {
+      width: 250px;
+      background: #fff;
+      color: var(--text-color);
+      padding: 20px;
+      overflow-y: auto;
+      height: calc(100vh - 50px);
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      right: 0;
+      top: 90px;
+      transition: transform 0.3s ease-in-out;
+}
+
+.night-mode .rightbar {
+      background-color: rgb(33, 33, 33);
+      color: white;
+}
+
+.right.closed {
+      transform: translateX(-100%);
+}
+
+.rightbar-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+}
+
+.task-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.task-header input[type="checkbox"] {
+      transform: scale(1.2);
+}
+
+.rightbar-options {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+}
+
+.option button {
+      background: none;
+      color: var(--text-color);
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+}
+
+.rightbar-footer {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+}
+
+.delete-btn {
+      background: none;
+      color: white;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+}
+
+.calendar-popup {
+      margin-top: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.react-calendar {
+      border: 2px solid white;
+      border-radius: 10px;
+      background-color: white;
+      color: black;
+}
+
+.react-calendar button {
+      color: black;
+}
+
+.react-calendar__tile {
+      color: black;
+      border-radius: 5px;
+}
+
+.react-calendar__tile--active {
+      background: white;
+      color: black;
+      border: 1px solid black;
+}
+
+.react-calendar__navigation button {
+      color: black;
+      background: none;
+      border: none;
+      cursor: pointer;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__tile:enabled:hover {
+      background-color: #f0f0f0;
+}
